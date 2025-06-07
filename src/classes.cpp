@@ -1,20 +1,21 @@
 #include <iostream>
 #include "raylib.h"
 #include <string>
+#include <cmath>
 
 class player{
     public:
     //  Miembros
-        int VidaJugador;
-        Texture2D TexturaJugador;
-        Vector2 PosicionJugador;
-        int VelocidadJugador;
+        int vidaJugador;
+        Texture2D texturaJugador;
+        Vector2 posicionJugador;
+        int velocidadJugador;
 
     //  Constructor & Destructor
         player(){
             std::cout << "Constructor DEFAULT Inicializado." << std::endl;
         }
-        player(int VidaJugador_def, Texture2D TexturaJugador_def, Vector2 PosicionJugador_def, int VelocidadJugador_def): VidaJugador(VidaJugador_def), TexturaJugador(TexturaJugador_def), PosicionJugador(PosicionJugador_def), VelocidadJugador(VelocidadJugador_def){
+        player(int vidaJugador_def, Texture2D texturaJugador_def, Vector2 posicionJugador_def, int velocidadJugador_def): vidaJugador(vidaJugador_def), texturaJugador(texturaJugador_def), posicionJugador(posicionJugador_def), velocidadJugador(velocidadJugador_def){
             std::cout << "Constructor PARAMETRIZADO Inicializado." << std::endl;
         }
         ~player(){
@@ -23,24 +24,33 @@ class player{
 
     //  Metodos
         void DrawHimSelf(){
-            DrawTexture(TexturaJugador, PosicionJugador.x, PosicionJugador.y, WHITE);
+            DrawTexture(texturaJugador, posicionJugador.x, posicionJugador.y, WHITE);
         }
         void TalkBuddy(){
-            DrawText("Well, Hello There!", (PosicionJugador.x - 10), (PosicionJugador.y - 10), 20, RED);
+            DrawText("Well, Hello There!", (posicionJugador.x - 10), (posicionJugador.y - 10), 20, RED);
         }
         void MoveBuddy(){
-            
+            Vector2 direccionJugador;
             if(IsKeyDown(KEY_RIGHT)){
-                PosicionJugador.x += VelocidadJugador;
+                direccionJugador.x += 1;
             }
             if(IsKeyDown(KEY_LEFT)){
-                PosicionJugador.x -= VelocidadJugador;
+                direccionJugador.x -= 1;
             }
             if(IsKeyDown(KEY_UP)){
-                PosicionJugador.y -= VelocidadJugador;
+                direccionJugador.y = -1;
             }
             if(IsKeyDown(KEY_DOWN)){
-                PosicionJugador.y += VelocidadJugador;
+                direccionJugador.y = +1;
             }
+
+            double magnitud = std::sqrt(direccionJugador.x * direccionJugador.x + direccionJugador.y * direccionJugador.y);
+            if(magnitud > 0){
+                direccionJugador.x /= magnitud;
+                direccionJugador.y /= magnitud;
+            }
+
+            posicionJugador.x += direccionJugador.x * velocidadJugador;
+            posicionJugador.y += direccionJugador.y * velocidadJugador;
         }
 };

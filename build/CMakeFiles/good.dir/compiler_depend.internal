@@ -50,6 +50,7 @@ CMakeFiles/good.dir/src/main.cpp.obj
  C:/mingw64/include/c++/14.2.0/bits/ranges_util.h
  C:/mingw64/include/c++/14.2.0/bits/refwrap.h
  C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h
+ C:/mingw64/include/c++/14.2.0/bits/specfun.h
  C:/mingw64/include/c++/14.2.0/bits/std_abs.h
  C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h
  C:/mingw64/include/c++/14.2.0/bits/stl_construct.h
@@ -69,6 +70,7 @@ CMakeFiles/good.dir/src/main.cpp.obj
  C:/mingw64/include/c++/14.2.0/cctype
  C:/mingw64/include/c++/14.2.0/cerrno
  C:/mingw64/include/c++/14.2.0/clocale
+ C:/mingw64/include/c++/14.2.0/cmath
  C:/mingw64/include/c++/14.2.0/compare
  C:/mingw64/include/c++/14.2.0/concepts
  C:/mingw64/include/c++/14.2.0/cstddef
@@ -89,6 +91,7 @@ CMakeFiles/good.dir/src/main.cpp.obj
  C:/mingw64/include/c++/14.2.0/iosfwd
  C:/mingw64/include/c++/14.2.0/iostream
  C:/mingw64/include/c++/14.2.0/istream
+ C:/mingw64/include/c++/14.2.0/limits
  C:/mingw64/include/c++/14.2.0/new
  C:/mingw64/include/c++/14.2.0/numbers
  C:/mingw64/include/c++/14.2.0/ostream
@@ -99,6 +102,18 @@ CMakeFiles/good.dir/src/main.cpp.obj
  C:/mingw64/include/c++/14.2.0/string
  C:/mingw64/include/c++/14.2.0/string_view
  C:/mingw64/include/c++/14.2.0/system_error
+ C:/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/beta_function.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/gamma.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc
+ C:/mingw64/include/c++/14.2.0/tr1/special_function_util.h
  C:/mingw64/include/c++/14.2.0/tuple
  C:/mingw64/include/c++/14.2.0/type_traits
  C:/mingw64/include/c++/14.2.0/typeinfo
@@ -135,6 +150,7 @@ CMakeFiles/good.dir/src/main.cpp.obj
  C:/mingw64/x86_64-w64-mingw32/include/limits.h
  C:/mingw64/x86_64-w64-mingw32/include/locale.h
  C:/mingw64/x86_64-w64-mingw32/include/malloc.h
+ C:/mingw64/x86_64-w64-mingw32/include/math.h
  C:/mingw64/x86_64-w64-mingw32/include/process.h
  C:/mingw64/x86_64-w64-mingw32/include/pthread.h
  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h
