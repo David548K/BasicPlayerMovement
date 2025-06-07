@@ -1,0 +1,3 @@
+C:/Users/Angel/Desktop/Proyectos/Proyectos C++/BasicPlayerMovement/build/CMakeFiles/good.dir
+C:/Users/Angel/Desktop/Proyectos/Proyectos C++/BasicPlayerMovement/build/CMakeFiles/edit_cache.dir
+C:/Users/Angel/Desktop/Proyectos/Proyectos C++/BasicPlayerMovement/build/CMakeFiles/rebuild_cache.dir
