@@ -1,5 +1,7 @@
 #include <iostream>
 #include "raylib.h"
+#include "classes.cpp"
+#include <string>
 
 int main(){
 
@@ -10,8 +12,9 @@ int main(){
     //--------------------------------------------------------------------------------------
 
 
-    Texture2D gato = LoadTexture("../src/Sly.png");
+    //Texture2D gato = LoadTexture("../src/Sly.png");
 
+    player Jugador1(LoadTexture("../src/Sly.png"), 100, 2, Vector2{20,20});
 
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
@@ -26,7 +29,8 @@ int main(){
         BeginDrawing();
 
             ClearBackground(RAYWHITE);
-            DrawTexture(gato, 30, 40, RAYWHITE);
+            //DrawTexture(gato, 30, 40, RAYWHITE);
+        Jugador1.drawPlayer();
 
         EndDrawing();
         //----------------------------------------------------------------------------------

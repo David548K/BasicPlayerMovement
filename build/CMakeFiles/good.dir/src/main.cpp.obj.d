@@ -153,4 +153,5 @@ CMakeFiles/good.dir/src/main.cpp.obj: \
  C:/Users/Angel/Desktop/Proyectos/Proyectos\ C++/BasicPlayerMovement/include/raylib.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:\Users\Angel\Desktop\Proyectos\Proyectos\ C++\BasicPlayerMovement\src\classes.cpp

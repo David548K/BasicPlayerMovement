@@ -156,7 +156,8 @@ CMakeFiles/good.dir/src/main.cpp.obj: C:/Users/Angel/Desktop/Proyectos/Proyectos
   C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/mingw64/x86_64-w64-mingw32/include/wctype.h
+  C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/Angel/Desktop/Proyectos/Proyectos\ C++/BasicPlayerMovement/src/classes.cpp
 
 
 C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
@@ -224,6 +225,8 @@ C:/mingw64/include/c++/14.2.0/bits/refwrap.h:
 C:/mingw64/include/c++/14.2.0/bits/memory_resource.h:
 
 C:/mingw64/include/c++/14.2.0/bits/ranges_base.h:
+
+C:/Users/Angel/Desktop/Proyectos/Proyectos\ C++/BasicPlayerMovement/src/classes.cpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
