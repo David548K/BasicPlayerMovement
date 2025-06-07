@@ -14,7 +14,7 @@ int main(){
 
    
     //  Creación de objeto jugador
-    player Jugador1(100, LoadTexture("../src/Sly.png"), Vector2{45, 45});
+    player Jugador1(100, LoadTexture("../src/Sly.png"), Vector2{45, 45}, 2);
 
 
 
@@ -24,7 +24,7 @@ int main(){
     {
         // Update
         //----------------------------------------------------------------------------------
-        
+        Jugador1.MoveBuddy();
 
         // Draw
         //----------------------------------------------------------------------------------
