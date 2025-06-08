@@ -1,1 +1,1 @@
- "C:/Users/Angel/Desktop/Proyectos/Proyectos C++/BasicPlayerMovement/lib/libraylib.a" -lwinmm -lopengl32 -lm -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ "C:/Users/Angel/Desktop/Proyectos/Proyectos C++/BasicPlayerMovement/lib/libraylib.a" libclasses.a -lwinmm -lopengl32 -lm -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

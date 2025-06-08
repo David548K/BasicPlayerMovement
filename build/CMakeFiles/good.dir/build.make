@@ -93,6 +93,7 @@ good_EXTERNAL_OBJECTS =
 good.exe: CMakeFiles/good.dir/src/main.cpp.obj
 good.exe: CMakeFiles/good.dir/build.make
 good.exe: C:/Users/Angel/Desktop/Proyectos/Proyectos\ C++/BasicPlayerMovement/lib/libraylib.a
+good.exe: libclasses.a
 good.exe: CMakeFiles/good.dir/linkLibs.rsp
 good.exe: CMakeFiles/good.dir/objects1.rsp
 good.exe: CMakeFiles/good.dir/link.txt

@@ -9,6 +9,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 add_library(raylib STATIC IMPORTED)
 set_target_properties(raylib PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/libraylib.a)
+add_library(classes ${CMAKE_SOURCE_DIR}/src/classes.cpp)
 
 add_executable(good src/main.cpp)
-target_link_libraries(good raylib winmm opengl32 m pthread)
+target_link_libraries(good raylib classes winmm opengl32 m pthread)

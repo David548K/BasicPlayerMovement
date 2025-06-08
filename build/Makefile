@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named classes
+
+# Build rule for target.
+classes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 classes
+.PHONY : classes
+
+# fast build rule for target.
+classes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/build
+.PHONY : classes/fast
+
+#=============================================================================
 # Target rules for targets named good
 
 # Build rule for target.
@@ -127,6 +140,30 @@ good: cmake_check_build_system
 good/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\good.dir\build.make CMakeFiles/good.dir/build
 .PHONY : good/fast
+
+src/classes.obj: src/classes.cpp.obj
+.PHONY : src/classes.obj
+
+# target to build an object file
+src/classes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/src/classes.cpp.obj
+.PHONY : src/classes.cpp.obj
+
+src/classes.i: src/classes.cpp.i
+.PHONY : src/classes.i
+
+# target to preprocess a source file
+src/classes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/src/classes.cpp.i
+.PHONY : src/classes.cpp.i
+
+src/classes.s: src/classes.cpp.s
+.PHONY : src/classes.s
+
+# target to generate assembly for a file
+src/classes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/src/classes.cpp.s
+.PHONY : src/classes.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -160,7 +197,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... classes
 	@echo ... good
+	@echo ... src/classes.obj
+	@echo ... src/classes.i
+	@echo ... src/classes.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

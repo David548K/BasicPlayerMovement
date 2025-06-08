@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "BasicPlayerMovement",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "classes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-classes-Debug-9c04258cf7ea0e4312a3.json",
+					"name" : "classes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "good::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-good-Debug-89c6462234deaba44ad6.json",
+					"jsonFile" : "target-good-Debug-ef81701cb297776550a6.json",
 					"name" : "good",
 					"projectIndex" : 0
 				}

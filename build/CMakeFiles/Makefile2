@@ -62,6 +62,7 @@ CMAKE_BINARY_DIR = "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMo
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/classes.dir/all
 all: CMakeFiles/good.dir/all
 .PHONY : all
 
@@ -70,22 +71,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/classes.dir/clean
 clean: CMakeFiles/good.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/classes.dir
+
+# All Build rule for target.
+CMakeFiles/classes.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" --progress-num=1,2 "Built target classes"
+.PHONY : CMakeFiles/classes.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/classes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/classes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" 0
+.PHONY : CMakeFiles/classes.dir/rule
+
+# Convenience name for target.
+classes: CMakeFiles/classes.dir/rule
+.PHONY : classes
+
+# clean rule for target.
+CMakeFiles/classes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\classes.dir\build.make CMakeFiles/classes.dir/clean
+.PHONY : CMakeFiles/classes.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/good.dir
 
 # All Build rule for target.
-CMakeFiles/good.dir/all:
+CMakeFiles/good.dir/all: CMakeFiles/classes.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\good.dir\build.make CMakeFiles/good.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\good.dir\build.make CMakeFiles/good.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" --progress-num=1,2 "Built target good"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" --progress-num=3,4 "Built target good"
 .PHONY : CMakeFiles/good.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/good.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/good.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Angel\Desktop\Proyectos\Proyectos C++\BasicPlayerMovement\build\CMakeFiles" 0
 .PHONY : CMakeFiles/good.dir/rule
